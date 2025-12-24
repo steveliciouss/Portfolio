@@ -24,7 +24,9 @@ export default function App() {
 
       <main className="pt-28">
 
-        <AboutMe darkMode={darkMode} />
+        <section id="about">
+          <AboutMe darkMode={darkMode} />
+        </section>
 
         {/* PORTFOLIO */}
         <section

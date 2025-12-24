@@ -3,7 +3,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 export default function AboutMe({ darkMode }) {
   return (
-    <section
+    <section 
       className={`
         relative w-full overflow-hidden
         transition-colors duration-500
