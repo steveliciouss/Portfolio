@@ -47,7 +47,7 @@ export default function TechStack({ darkMode }) {
                 : "text-blue-600 hover:text-blue-500"}
             `}
           >
-            View All Technologies →
+            View All →
           </button>
         </div>
       </div>
