@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function SocialLinks({ darkMode }) {
   const socials = [
-    { name: "GitHub", icon: FaGithub, href: "https://github.com/" },
-    { name: "LinkedIn", icon: FaLinkedin, href: "https://linkedin.com/" },
-    { name: "Email", icon: FaEnvelope, href: "mailto:your@email.com" },
+    { name: "GitHub", icon: FaGithub, href: "https://github.com/steve-0s" },
+    { name: "LinkedIn", icon: FaLinkedin, href: "https://ph.linkedin.com/in/stevens-anthony-m-fabriga-1578b32b5" },
+    { name: "Email", icon: FaEnvelope, href: "stevensanthonyf@gmail.com" },
   ];
 
   return (

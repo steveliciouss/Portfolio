@@ -1,4 +1,4 @@
-import profileImg from "../assets/profile-img.png";
+import profileImg from "/profile-img.png";
 import { IoLocationOutline } from "react-icons/io5";
 
 export default function AboutMe({ darkMode }) {

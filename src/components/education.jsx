@@ -12,12 +12,12 @@ export default function Education({ darkMode }) {
       <div className="space-y-6">
         <div>
           <p className="font-semibold">Bachelor of Science in Information Technology</p>
-          <p className="text-sm opacity-70">XYZ University — 2021 – 2025</p>
+          <p className="text-sm opacity-70">Ateneo de Naga University — 2022 – Present</p>
         </div>
 
         <div>
-          <p className="font-semibold">Senior High School – ICT Strand</p>
-          <p className="text-sm opacity-70">XYZ Senior High — 2019 – 2021</p>
+          <p className="font-semibold">Senior High School – Science, Technology, Engineering, & Mathematics (STEM)</p>
+          <p className="text-sm opacity-70">St. Bridget School — 2020 – 2022</p>
         </div>
       </div>
     </div>
