@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Tell Tailwind we use class-based dark mode */
+@theme {
+  --dark-mode: class;
+}
+

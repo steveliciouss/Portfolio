@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stevens Anthony Fabriga</title>
+  </head>
+  <body>
+    <!-- Splash Screen -->
+    <div id="splash"
+        class="fixed inset-0 flex items-center justify-center
+                bg-white dark:bg-neutral-900
+                text-black dark:text-white
+                z-50 transition-opacity duration-500">
+
+      <div class="flex flex-col items-center gap-4">
+        <div class="w-16 h-16 border-4 border-gray-300 border-t-purple-600
+                    rounded-full animate-spin"></div>
+        <p class="text-sm tracking-widest">Loading...</p>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
