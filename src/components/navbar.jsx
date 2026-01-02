@@ -33,7 +33,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
         {/* Logo */}
         <span className={`font-semibold text-lg ${darkMode ? "text-white" : "text-gray-900"}`}>
-          Stevens
+          SA.Fabriga
         </span>
 
         {/* Desktop Nav */}
