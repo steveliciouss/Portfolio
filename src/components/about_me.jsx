@@ -86,10 +86,10 @@ export default function AboutMe({ darkMode }) {
             <p className={`mt-6 max-w-xl ${
               darkMode ? "text-gray-300" : "text-gray-600"
             }`}>
-              An Information Technology student seeking an On-the-Job Training opportunity to gain hands-on experience
-              in web and mobile application development. I am eager to improve my programming, problem-solving, and
-              teamwork skills while learning industry-standard tools and best practices to prepare myself for a future
-              career as a full-stack developer.
+              I am an Information Technology student passionate about creating web and mobile applications. 
+              I enjoy turning ideas into functional projects while improving my skills in programming, problem-solving, 
+              and teamwork. Currently, I am exploring modern web and mobile frameworks like React, Tailwind, and Expo,
+              eager to gain real-world experience and grow as a full-stack developer.
             </p>
 
             <button
