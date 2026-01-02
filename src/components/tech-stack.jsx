@@ -3,11 +3,15 @@ import { useState } from "react";
 export default function TechStack({ darkMode }) {
   const [open, setOpen] = useState(false);
 
-  const mainStack = ["React", "Tailwind", "Laravel", "JavaScript", "Vercel", "Render", "Expo", "SQLite"];
+  const mainStack = 
+  ["React", "Tailwind", "Laravel", "JavaScript", "Vercel", "Render", "Expo", "SQLite",
+    "CSS", "PHP", "C++", "Node.js", "MySQL", "MongoDB", "GitHub", "VS Code", "Figma"
+  ];
 
   const categorizedStack = {
-    Frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind"],
-    Backend: ["Laravel", "Node.js", "C++"],
+    Programming_Languages: ["JavaScript", "PHP", "C++"],
+    Frontend: ["CSS", "React", "Tailwind"],
+    Backend: ["Laravel", "Node.js"],
     Database: ["MySQL", "MongoDB", "SQLite"],
     Tools: ["GitHub", "VS Code", "Figma", "Lucidchart", "ClickUp", "WordPress"],
     Deployment: ["Vercel", "Render", "Expo"],
@@ -15,9 +19,11 @@ export default function TechStack({ darkMode }) {
 
   return (
     <>
-      <div className={`rounded-3xl p-12 shadow-xl transition
-        ${darkMode ? "bg-neutral-800/80" : "bg-white"}`}>
-
+      <div
+        className={`rounded-3xl p-12 shadow-xl transition flex flex-col h-full ${
+          darkMode ? "bg-neutral-800/80" : "bg-white"
+        }`}
+      >
         <h2 className={`text-3xl font-bold mb-6 ${darkMode ? "text-white" : "text-gray-900"}`}>
           Tech Stack
         </h2>
@@ -26,26 +32,22 @@ export default function TechStack({ darkMode }) {
           {mainStack.map((s) => (
             <span
               key={s}
-              className={`px-4 py-2 rounded-full text-sm shadow-sm transition
-                ${darkMode
-                  ? "bg-neutral-900 text-gray-300"
-                  : "bg-gray-50 text-gray-600"}
-              `}
+              className={`px-4 py-2 rounded-full text-sm shadow-sm transition ${
+                darkMode ? "bg-neutral-900 text-gray-300" : "bg-gray-50 text-gray-600"
+              }`}
             >
               {s}
             </span>
           ))}
         </div>
 
-        {/* View Button */}
-        <div className="flex justify-end mt-5">
+        {/* Push button to the bottom */}
+        <div className="mt-auto flex justify-end">
           <button
             onClick={() => setOpen(true)}
-            className={`text-sm font-medium transition inline-flex items-center gap-1
-              ${darkMode
-                ? "text-violet-400 hover:text-violet-300"
-                : "text-blue-600 hover:text-blue-500"}
-            `}
+            className={`text-sm font-medium transition inline-flex items-center gap-1 ${
+              darkMode ? "text-violet-400 hover:text-violet-300" : "text-blue-600 hover:text-blue-500"
+            }`}
           >
             View All →
           </button>
@@ -55,9 +57,11 @@ export default function TechStack({ darkMode }) {
       {/* MODAL */}
       {open && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className={`w-full max-w-xl rounded-2xl p-6 shadow-xl
-            ${darkMode ? "bg-neutral-900 text-white" : "bg-white"}`}>
-
+          <div
+            className={`w-full max-w-xl rounded-2xl p-6 shadow-xl ${
+              darkMode ? "bg-neutral-900 text-white" : "bg-white"
+            }`}
+          >
             <div className="flex justify-between items-center mb-4">
               <h3 className="font-bold text-xl">Full Tech Stack</h3>
               <button
@@ -71,9 +75,11 @@ export default function TechStack({ darkMode }) {
             <div className="space-y-5">
               {Object.entries(categorizedStack).map(([category, items]) => (
                 <div key={category}>
-                  <h4 className={`text-m font-semibold mb-2
-                    ${darkMode ? "text-blue-600" : "text-indigo-600"}
-                  `}>
+                  <h4
+                    className={`text-m font-semibold mb-2 ${
+                      darkMode ? "text-blue-600" : "text-indigo-600"
+                    }`}
+                  >
                     {category}
                   </h4>
 
@@ -81,11 +87,9 @@ export default function TechStack({ darkMode }) {
                     {items.map((t) => (
                       <span
                         key={t}
-                        className={`px-3 py-1.5 rounded-full text-sm transition
-                          ${darkMode
-                            ? "bg-neutral-800 text-gray-300"
-                            : "bg-gray-100 text-gray-700"}
-                        `}
+                        className={`px-3 py-1.5 rounded-full text-sm transition ${
+                          darkMode ? "bg-neutral-800 text-gray-300" : "bg-gray-100 text-gray-700"
+                        }`}
                       >
                         {t}
                       </span>
@@ -94,7 +98,6 @@ export default function TechStack({ darkMode }) {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       )}

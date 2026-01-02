@@ -86,8 +86,10 @@ export default function AboutMe({ darkMode }) {
             <p className={`mt-6 max-w-xl ${
               darkMode ? "text-gray-300" : "text-gray-600"
             }`}>
-              I build clean, responsive, and modern web experiences using
-              React and Tailwind CSS, focusing on performance and design.
+              An Information Technology student seeking an On-the-Job Training opportunity to gain hands-on experience
+              in web and mobile application development. I am eager to improve my programming, problem-solving, and
+              teamwork skills while learning industry-standard tools and best practices to prepare myself for a future
+              career as a full-stack developer.
             </p>
 
             <button

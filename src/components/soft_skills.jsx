@@ -1,11 +1,14 @@
 export default function SoftSkills({ darkMode }) {
   const skills = [
-    "Communication",
-    "Teamwork",
-    "Adaptability",
-    "Problem Solving",
-    "Leadership",
-    "Time Management",
+    "Team collaboration",
+    "Technical documentation",
+    "Communication skills",
+    "Willingness to learn",
+    "Active listening",
+    "Time-management",
+    "Task collaboration",
+    "Deadline management",
+    "Quality Assurance",
   ];
 
   return (

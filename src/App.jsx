@@ -36,20 +36,20 @@ export default function App() {
         >
           <div className="max-w-6xl mx-auto px-4 space-y-10">
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="md:col-span-2">
                 <Projects darkMode={darkMode} />
               </div>
-              <TechStack darkMode={darkMode} />
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <Certifications darkMode={darkMode} />
+              <TechStack darkMode={darkMode} />
               <SoftSkills darkMode={darkMode} />
             </div>
 
-            <div className="grid md:grid-cols-1 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Education darkMode={darkMode} />
+              <Certifications darkMode={darkMode} />
             </div>
 
           </div>
