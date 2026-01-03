@@ -6,32 +6,32 @@ const projectData = [
     description:
       "TapTrack is a web and mobile system using RFID/NFC to track student attendance and violations. It includes a web portal for managing records, events, and violations, and a mobile app for students, parents, employees, and security staff. The system was tested in a real school environment, proving its effectiveness.",
     techStack: ["Laravel", "PostgreSQL", "Tailwind CSS", "React Native", "JavaScript", "Expo"],
-    github: "https://github.com/yourusername/taptrack",
-    appLink: "#",
+    github: null,
+    appLink: null,
   },
   {
     title: "GymBro – Gym Management System",
     description:
       "GymBro is a web-based gym management system designed to manage memberships, track attendance, and organize schedules. The system helps employees and admins monitor members and streamline gym operations efficiently.",
     techStack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourusername/gymbro",
-    appLink: "#",
+    github: null,
+    appLink: null,
   },
   {
     title: "ADNU Helper – Service Hiring Web Application",
     description:
       "ADNU Helper is a web application that allows users to hire services for daily tasks such as grocery shopping, buying lunch, or cleaning rooms and homes. The platform streamlines task requests, making it easy and convenient to connect users with helpers.",
-    techStack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourusername/adnu-helper",
-    appLink: "#",
+    techStack: ["HTML", "CSS", "Python"],
+    github: "https://github.com/steve-0s/WebDev",
+    appLink: null,
   },
   {
     title: "Forge – Personal Workout App",
     description:
       "Forge is a mobile application that allows users to create custom workout splits and plans. Each workout includes a set counter and a customizable rest timer to stay on track between sets, helping users maintain focus and consistency during their sessions.",
     techStack: ["React Native", "JavaScript", "Tailwind CSS", "Expo"],
-    github: "https://github.com/yourusername/forge",
-    appLink: "#",
+    github: "https://github.com/steve-0s/Workout-Session-Manager-Mobile-App-",
+    appLink: null,
   },
 ];
 
@@ -70,8 +70,7 @@ export default function Projects({ darkMode }) {
                 </span>
               ))}
             </div>
-
-            {/* Push button to the bottom */}
+            {/* Button */}
             <div className="mt-auto flex justify-end">
               <button
                 onClick={() => setSelectedProject(proj)}
