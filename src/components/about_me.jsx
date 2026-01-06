@@ -1,9 +1,12 @@
+import { useState } from "react";
 import profileImg from "/profile-img.png";
 import { IoLocationOutline } from "react-icons/io5";
 
 export default function AboutMe({ darkMode }) {
+  const [openCV, setOpenCV] = useState(false);
+
   return (
-    <section 
+    <section
       className={`
         relative w-full overflow-hidden
         transition-colors duration-500
@@ -16,24 +19,19 @@ export default function AboutMe({ darkMode }) {
         className={`
           absolute top-0 -left-40 w-[500px] h-[600px]
           rounded-full blur-[140px] animate-pulse
-          ${darkMode
-            ? "bg-purple-600 opacity-30"
-            : "bg-blue-400 opacity-15"}
+          ${darkMode ? "bg-purple-600 opacity-30" : "bg-blue-400 opacity-15"}
         `}
       />
       <div
         className={`
           absolute top-0 right-0 w-[400px] h-[600px]
           rounded-full blur-[140px] animate-pulse
-          ${darkMode
-            ? "bg-fuchsia-600 opacity-20"
-            : "bg-sky-300 opacity-15"}
+          ${darkMode ? "bg-fuchsia-600 opacity-20" : "bg-sky-300 opacity-15"}
         `}
       />
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 pt-40 pb-40">
-
         <div
           className={`
             flex flex-col md:flex-row items-center gap-12
@@ -51,9 +49,11 @@ export default function AboutMe({ darkMode }) {
                 : "bg-gradient-to-br from-blue-500 to-blue-600"}
             `}
           >
-            <div className={`w-full h-full rounded-full overflow-hidden ${
-              darkMode ? "bg-neutral-900" : "bg-white"
-            }`}>
+            <div
+              className={`w-full h-full rounded-full overflow-hidden ${
+                darkMode ? "bg-neutral-900" : "bg-white"
+              }`}
+            >
               <img
                 src={profileImg}
                 alt="Profile"
@@ -62,49 +62,83 @@ export default function AboutMe({ darkMode }) {
             </div>
           </div>
 
-          {/* Text */}
           <div className="flex-1 text-center md:text-left">
-            <h1 className={`text-3xl md:text-4xl font-bold ${
-              darkMode ? "text-white" : "text-gray-900"
-            }`}>
+            <h1
+              className={`text-3xl md:text-4xl font-bold ${
+                darkMode ? "text-white" : "text-gray-900"
+              }`}
+            >
               Stevens Anthony M. Fabriga
             </h1>
 
-            <p className={`mt-2 text-lg font-medium ${
-              darkMode ? "text-purple-400" : "text-blue-600"
-            }`}>
+            <p
+              className={`mt-3 text-xl font-bold ${
+                darkMode ? "text-purple-400" : "text-blue-600"
+              }`}
+            >
               Full Stack Developer
             </p>
 
-            <div className={`mt-3 flex gap-2 justify-center md:justify-start ${
-              darkMode ? "text-gray-300" : "text-gray-600"
-            }`}>
-              <IoLocationOutline />
-              <span>Camarines Sur, Philippines</span>
-            </div>
-
-            <p className={`mt-6 max-w-xl ${
-              darkMode ? "text-gray-300" : "text-gray-600"
-            }`}>
-              I am an Information Technology student passionate about creating web and mobile applications. 
-              I enjoy turning ideas into functional projects while improving my skills in programming, problem-solving, 
-              and teamwork. Currently, I am exploring modern web and mobile frameworks like React, Tailwind, and Expo,
-              eager to gain real-world experience and grow as a full-stack developer.
-            </p>
-
-            <button
-              className={`mt-8 px-6 py-3 rounded-full font-medium
-                transition-all hover:scale-105 active:scale-95
-                ${darkMode
-                  ? "bg-purple-600 text-white hover:bg-purple-700"
-                  : "bg-blue-600 text-white hover:bg-blue-700"}
+            <div
+              className={`mt-3 inline-flex gap-1.5 py-1 rounded-full text-sm leading-none
+                ${darkMode ? "text-gray-300" : "text-gray-600" }
               `}
             >
-              Download CV
-            </button>
+              <IoLocationOutline/>
+              <span className="leading-none">Camarines Sur, Philippines</span>
+            </div>
+
+
+            <p
+              className={`mt-6 max-w-xl ${
+                darkMode ? "text-gray-300" : "text-gray-600"
+              }`}
+            >
+              I am an Information Technology student passionate about creating web
+              and mobile applications. I enjoy turning ideas into functional
+              projects while improving my skills in programming, problem-solving,
+              and teamwork. Currently, I am exploring modern web and mobile
+              frameworks like React, Tailwind, and Expo, eager to gain real-world
+              experience and grow as a full-stack developer.
+            </p>
+
+            {/* CV Button */}
+            <div className="mt-6">
+              <button
+                onClick={() => setOpenCV(true)}
+                className={`px-4 py-2 rounded-full text-sm transition hover:scale-105 font-bold
+                  ${darkMode
+                    ? "bg-purple-600 text-white hover:bg-purple-700" 
+                    : "bg-blue-600 text-white hover:bg-blue-700"}
+                `}
+              >
+                Curriculum Vitae [CV]
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* CV MODAL */}
+      {openCV && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur">
+          <div
+            className={`w-[90vw] max-w-4xl h-[85vh] rounded-2xl p-4 pb-12
+              ${darkMode ? "bg-neutral-900 text-white" : "bg-white"}`}
+          >
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="font-semibold">Curriculum Vitae</h3>
+              <button onClick={() => setOpenCV(false)}>✕</button>
+            </div>
+
+            <iframe
+              src="[Curriculum_Vitae]-Stevens_Anthony_Fabriga.pdf"
+              className="w-full h-full rounded-xl border"
+              title="CV Preview"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
