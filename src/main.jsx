@@ -8,9 +8,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
-
-// Fade out splash
-setTimeout(() => {
-  splash.classList.add("opacity-0");
-  setTimeout(() => splash.remove(), 500);
-}, 800);

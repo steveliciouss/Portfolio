@@ -9,8 +9,8 @@ export default function Certifications({ darkMode }) {
 
   return (
     <>
-      <div className={`rounded-3xl p-12 shadow-xl transition
-        ${darkMode ? "bg-neutral-800/80" : "bg-white"}`}>
+      <div className={`rounded-3xl p-12 shadow-xl 
+        ${darkMode ? "bg-neutral-800 border border-gray-900" : "bg-white border border-gray-100"}`}>
 
         <h2 className={`text-3xl font-bold mb-6 ${darkMode ? "text-white" : "text-gray-900"}`}>
           Certifications
@@ -21,7 +21,7 @@ export default function Certifications({ darkMode }) {
             <button
               key={c.name}
               onClick={() => setOpen(c)}
-              className={`px-4 py-2 rounded-full text-sm transition hover:scale-105
+              className={`px-4 py-2 rounded-full text-sm hover:scale-105
                 ${darkMode
                   ? "bg-neutral-900 text-gray-300 hover:bg-neutral-700"
                   : "bg-gray-50 text-gray-600 hover:bg-gray-200"}`}

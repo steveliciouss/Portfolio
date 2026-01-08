@@ -8,13 +8,12 @@ export default function SocialLinks({ darkMode }) {
   ];
 
   return (
-    <section id="connect" className={`py-16 flex justify-center transition-colors duration-500
-    ${darkMode ? "bg-neutral-900" : "bg-slate-50"}`}>
+    <section id="connect" className={`py-1 flex justify-center
+    ${darkMode ? "bg-neutral-900 " : "bg-white"}`}>
       <div
-        className={`rounded-2xl shadow-lg px-10 py-6
-        transition-all duration-500
+        className={`rounded-2xl shadow-lg px-10 py-6 
         hover:shadow-xl
-        ${darkMode ? "bg-neutral-800/80" : "bg-white"}`}
+        ${darkMode ? "bg-neutral-800/80 border border-gray-900" : "bg-white border border-gray-100"}`}
       >
         <h3
           className={`text-lg font-semibold text-center mb-4
@@ -29,7 +28,7 @@ export default function SocialLinks({ darkMode }) {
               <a
                 href={s.href}
                 target="_blank"
-                className={`flex items-center gap-2 transition hover:scale-105 active:scale-95
+                className={`flex items-center gap-2 hover:scale-105 active:scale-95
                   ${darkMode
                     ? "text-purple-400 hover:text-purple-300"
                     : "text-blue-600 hover:text-blue-500"}

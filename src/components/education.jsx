@@ -3,8 +3,7 @@ export default function Education({ darkMode }) {
     <div
       className={`
         rounded-3xl shadow-xl p-10
-        transition-colors duration-500
-        ${darkMode ? "bg-neutral-800/80 text-gray-200" : "bg-white text-gray-800"}
+        ${darkMode ? "bg-neutral-800/80 text-gray-200 border border-gray-900" : "bg-white text-gray-800 border border-gray-100"}
       `}
     >
       <h3 className="text-2xl font-bold mb-6">Education</h3>

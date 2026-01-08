@@ -8,36 +8,16 @@ export default function AboutMe({ darkMode }) {
   return (
     <section
       className={`
-        relative w-full overflow-hidden
-        transition-colors duration-500
-        -mt-24
+        relative w-full  -mt-24
         ${darkMode ? "bg-neutral-900" : "bg-white"}
       `}
     >
-      {/* Background Glow */}
-      <div
-        className={`
-          absolute top-0 -left-40 w-[500px] h-[600px]
-          rounded-full blur-[140px] animate-pulse
-          ${darkMode ? "bg-purple-600 opacity-30" : "bg-blue-400 opacity-15"}
-        `}
-      />
-      <div
-        className={`
-          absolute top-0 right-0 w-[400px] h-[600px]
-          rounded-full blur-[140px] animate-pulse
-          ${darkMode ? "bg-fuchsia-600 opacity-20" : "bg-sky-300 opacity-15"}
-        `}
-      />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-40 pb-40">
+      <div className="relative max-w-6xl mx-auto px-6 pt-40 rounded-2xl">
         <div
-          className={`
-            flex flex-col md:flex-row items-center gap-12
-            rounded-3xl shadow-xl p-10
-            transition-colors duration-500
-            ${darkMode ? "bg-neutral-800/80" : "bg-white"}
+          className={` flex flex-col md:flex-row items-center gap-12 rounded-3xl shadow-xl p-10
+            ${darkMode ? "bg-neutral-800/80 border border-gray-900" : "bg-white border border-gray-100"}
           `}
         >
           {/* Profile Image */}
@@ -50,7 +30,7 @@ export default function AboutMe({ darkMode }) {
             `}
           >
             <div
-              className={`w-full h-full rounded-full overflow-hidden ${
+              className={`w-full h-full rounded-full ${
                 darkMode ? "bg-neutral-900" : "bg-white"
               }`}
             >
@@ -106,7 +86,7 @@ export default function AboutMe({ darkMode }) {
             <div className="mt-6">
               <button
                 onClick={() => setOpenCV(true)}
-                className={`px-4 py-2 rounded-full text-sm transition hover:scale-105 font-bold
+                className={`px-4 py-2 rounded-full text-sm hover:scale-105 font-bold
                   ${darkMode
                     ? "bg-purple-600 text-white hover:bg-purple-700" 
                     : "bg-blue-600 text-white hover:bg-blue-700"}

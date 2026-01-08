@@ -40,8 +40,8 @@ export default function Projects({ darkMode }) {
 
   return (
     <div
-      className={`rounded-3xl p-12 shadow-xl transition ${
-        darkMode ? "bg-neutral-800/80" : "bg-white"
+      className={`rounded-3xl p-12 shadow-xl  ${
+        darkMode ? "bg-neutral-800/80 border border-gray-900" : "bg-white border border-gray-100"
       }`}
     >
       <h2 className={`text-3xl font-bold mb-8 ${darkMode ? "text-white" : "text-gray-900"}`}>
@@ -52,7 +52,7 @@ export default function Projects({ darkMode }) {
         {projectData.map((proj) => (
           <div
             key={proj.title}
-            className={`rounded-2xl p-6 shadow transition flex flex-col h-full ${
+            className={`rounded-2xl p-6 shadow flex flex-col h-full ${
               darkMode ? "bg-neutral-900 text-gray-300" : "bg-gray-50 text-gray-600"
             }`}
           >
@@ -89,7 +89,7 @@ export default function Projects({ darkMode }) {
       {selectedProject && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
           <div
-            className={`w-full max-w-2xl rounded-2xl p-6 shadow-xl ${
+            className={`w-full max-w-2xl rounded-2xl p-6 shadow ${
               darkMode ? "bg-neutral-900 text-white" : "bg-white text-gray-900"
             }`}
           >
