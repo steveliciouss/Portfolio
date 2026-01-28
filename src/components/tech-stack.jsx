@@ -9,11 +9,11 @@ export default function TechStack({ darkMode }) {
   ];
 
   const categorizedStack = {
-    Programming_Languages: [ "Python", "PHP", "C++"],
-    Frontend: ["HTML", "CSS", "React", "Tailwind", "React Native", "JavaScript"],
-    Backend: ["Laravel", "Node.js"],
-    Database: ["SQLite", "MySQL",],
-    Tools: ["GitHub", "VS Code", "Figma", "Lucidchart", "ClickUp", "WordPress"],
+    Programming_Languages: ["Python", "PHP", "C++"],
+    Frontend: ["HTML", "CSS", "React", "Tailwind", "React Native", "XML"],
+    Backend: ["Laravel", "Node.js", "Python", "Odoo"],
+    Database: ["SQLite", "MySQL", "PostgreSQL", "MongoDB"],
+    Tools: ["GitHub", "Bit Bucket", "VS Code", "Figma", "Lucidchart", "ClickUp", "WordPress"],
     Deployment: ["Vercel", "Render", "Expo"],
   };
 
