@@ -8,7 +8,7 @@ import SoftSkills from "./components/soft_skills";
 import Education from "./components/education";
 import SocialLinks from "./components/social_links";
 import Footer from "./components/footer";
-// import CursorTrail from "./components/cursortrail";
+import CursorTrail from "./components/cursortrail";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -54,7 +54,7 @@ export default function App() {
         <SocialLinks darkMode={darkMode} />
         <Footer darkMode={darkMode} />
 
-        {/* <CursorTrail darkMode={darkMode} /> */}
+        <CursorTrail darkMode={darkMode} />
       </main>
     </div>
   );
