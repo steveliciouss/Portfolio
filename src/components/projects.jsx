@@ -27,7 +27,7 @@ const projectData = [
     subtitle: "Real-time Forecasts",
     description:
       "A lightweight weather app that provides real-time forecasts, current conditions, and essential weather details in a clean interface.",
-    techStack: ["React", "OpenWeatherMap"],
+    techStack: ["React", "Tailwind CSS", "OpenWeatherMap"],
     github: "https://github.com/steve-0s/weather",
     appLink: "https://weather-j92p.onrender.com",
     color: "from-sky-400 to-indigo-500",
