@@ -36,7 +36,7 @@ export default function App() {
 
         <main className="container mx-auto px-4 pb-10 space-y-16 md:space-y-20">
 
-          <section id="about" className="pt-28 md:pt-35">
+          <section id="about" className="pt-14 md:pt-20">
             <AboutMe darkMode={darkMode} />
           </section>
 

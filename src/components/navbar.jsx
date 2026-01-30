@@ -41,7 +41,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           `}
         >
           <h1 className="text-xl font-bold font-display tracking-tight bg-linear-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            SAF
+            SA.FABRIGA
           </h1>
 
           <ul className="hidden md:flex gap-8 font-medium text-sm">

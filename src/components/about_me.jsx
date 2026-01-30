@@ -6,7 +6,7 @@ export default function AboutMe({ darkMode }) {
   const [openCV, setOpenCV] = useState(false);
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full pt-6">
       <div className={`relative p-8 md:p-12 rounded-3xl overflow-hidden border backdrop-blur-sm transition-colors duration-300
         ${darkMode ? "bg-neutral-900/40 border-neutral-700/50" : "bg-white/40 border-white/60"}
       `}>
@@ -30,7 +30,7 @@ export default function AboutMe({ darkMode }) {
                 Available for work
               </div>
 
-              <h1 className={`text-4xl md:text-6xl font-bold font-display tracking-tight leading-tight mb-2
+              <h1 className={`text-3xl md:text-5xl font-bold font-display tracking-tight leading-tight mb-2
                 ${darkMode ? "bg-linear-to-r from-purple-500 via-fuchsia-500 to-blue-500 bg-clip-text text-transparent" : "text-neutral-900"}
               `}>
                 Hi, I'm <br />
@@ -39,12 +39,12 @@ export default function AboutMe({ darkMode }) {
                 </span>
               </h1>
 
-              <p className={`text-xl md:text-2xl font-light ${darkMode ? "text-neutral-400" : "text-neutral-600"}`}>
+              <p className={`text-lg md:text-xl font-light ${darkMode ? "text-neutral-400" : "text-neutral-600"}`}>
                 Full Stack Developer
               </p>
             </div>
 
-            <p className={`max-w-xl text-lg leading-relaxed ${darkMode ? "text-neutral-300" : "text-neutral-600"}`}>
+            <p className={`max-w-xl text-base leading-relaxed ${darkMode ? "text-neutral-300" : "text-neutral-600"}`}>
               I am an Information Technology student passionate about creating web and mobile applications. I enjoy turning ideas
               into functional projects while improving my skills in programming, problem-solving, and teamwork. Currently, I am
               exploring modern web and mobile frameworks like React, Tailwind, and Expo, eager to gain real-world experience and
